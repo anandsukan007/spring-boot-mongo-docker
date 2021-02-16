@@ -15,6 +15,7 @@ pipeline {
             }
         }
         stage('Build Docker Image'){
+            agent { label 'slave_kubemaster' }
         steps{
         sh 'docker build -t anandsukan007/spring-boot-mongo .'
     }
