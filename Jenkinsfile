@@ -21,13 +21,13 @@ pipeline {
     }
     }
     
-    /*stage('Push Docker Image'){
+    stage('Push Docker Image'){
     steps{
-        withCredentials([string(credentialsId: 'DOCKER_HUB_PASSWORD', variable: 'DOKCER_HUB_PASSWORD')]) {
-          sh "docker login -u anandsukan007 -p ${DOCKER_HUB_PASSWORD}"
+        withCredentials([string(credentialsId: 'DOCKER_HUB_PASSWORD', variable: 'DOCKER_HUB_PASSWORD')]) {
+              sh "docker login -u anandsukan007 -p ${DOCKER_HUB_PASSWORD}"
         }
         sh 'docker push anandsukan007/spring-boot-mongo'
      }
-     }*/
+     }
      }
      }
