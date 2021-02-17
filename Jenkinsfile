@@ -29,5 +29,10 @@ pipeline {
         sh "docker push anandsukan007/spring-boot-mongo "
      }
      }
+        stage('Deploy to K8s'){
+            steps{
+        sh " kubectl apply -f springBootMongo.yml "  
+    }
+    }
      }
      }
