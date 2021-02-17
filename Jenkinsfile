@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'slave_kubemaster' }
+    agent { label 'kubemaster' }
     environment {
         PATH = "/opt/maven/apache-maven-3.6.3/bin:$PATH"
 }
